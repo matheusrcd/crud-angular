@@ -5,10 +5,12 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { ErrorDialogComponent } from './components/error-dialog/error-dialog.component';
+import { CategoryPipe } from './pipes/category.pipe';
 
 @NgModule({
   declarations: [
-    ErrorDialogComponent
+    ErrorDialogComponent,
+    CategoryPipe
   ],
   imports: [
     CommonModule,
@@ -16,6 +18,6 @@ import { ErrorDialogComponent } from './components/error-dialog/error-dialog.com
     MatButtonModule,
     MatDialogModule
   ],
-  exports: [ErrorDialogComponent]
+  exports: [ErrorDialogComponent, CategoryPipe]
 })
 export class SharedModule { }
